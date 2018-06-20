@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <display-name>WsHgi</display-name>
+    <servlet>
+        <servlet-name>SrvPendienteImagen</servlet-name>
+        <servlet-class>hgi.servlet.SrvPendienteImagen</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SrvConsultaSofatec</servlet-name>
+        <servlet-class>hgi.servlet.SrvConsultaSofatec</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SrvBuscarActa</servlet-name>
+        <servlet-class>hgi.servlet.SrvBuscarActa</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SrvPublicacion</servlet-name>
+        <servlet-class>hgi.servlet.SrvPublicacion</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SrvPendienteImagen</servlet-name>
+        <url-pattern>/SrvPendienteImagen</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SrvConsultaSofatec</servlet-name>
+        <url-pattern>/SrvConsultaSofatec</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SrvBuscarActa</servlet-name>
+        <url-pattern>/rest/buscarActa</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SrvPublicacion</servlet-name>
+        <url-pattern>/SrvPublicacion</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
